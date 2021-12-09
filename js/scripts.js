@@ -5,17 +5,10 @@ let pokemonList= [
 ];
 
 for (let i = 0; i < pokemonList.length; i++){
-  if (pokemonList[i].types ='grass'){
-    console.log(pokemonList[i].name);
+  if (pokemonList[i].height > 2) {
+    document.write('<br>' + pokemonList[i].name + '(height:' + pokemonList[i].height + ') - Wow, that\'s big! <br>');
+  } else {
+    document.write('<br>' + pokemonList[i].name + '(height:' + pokemonList[i].height + ') <br>');
   }
-  else if (pokemonList[i].types ='fire'){
-    console.log(pokemonList[i].name);
-  }
-  else {
-    console.log(pokemonList[i].name);
-  }
-if (pokemonList[i].height > 2) {
-  console.log( ' Wow, that\'s big!')
-}
-  document.write(pokemonList[i].name + '(height:' + pokemonList[i].height + ')')
+
 }
