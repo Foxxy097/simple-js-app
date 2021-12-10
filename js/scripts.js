@@ -4,11 +4,7 @@ let pokemonList= [
   {name: 'Squirtle', types: ['water'], height: 1.08},
 ];
 
-for (let i = 0; i < pokemonList.length; i++){
-  if (pokemonList[i].height > 2) {
-    document.write('<br>' + pokemonList[i].name + '(height:' + pokemonList[i].height + ') - Wow, that\'s big! <br>');
-  } else {
-    document.write('<br>' + pokemonList[i].name + '(height:' + pokemonList[i].height + ') <br>');
-  }
+pokemonList.forEach((item, i) => {
+  document.write('<br>' + pokemonList[i].name + '(height:' + pokemonList[i].height + ') <br>');
 
-}
+});
