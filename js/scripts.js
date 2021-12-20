@@ -22,6 +22,7 @@ function addListItem(pokemon){
   button.innerText = pokemon.name;
   button.classList.add('Pokemon-button');
   button.classList.add('btn')
+  button.classList.add('btn-dark')
 
   listpokemon.appendChild(button);
   pokemonList.appendChild(listpokemon);
